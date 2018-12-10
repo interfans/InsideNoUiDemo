@@ -15,10 +15,7 @@ import cn.idaddy.android.opensdk.lib.IDYConfig
 import cn.idaddy.android.opensdk.lib.phone.OnGetVerifyCodeCallback
 import cn.idaddy.android.opensdk.lib.user.IDYLoginIdaddyCallback
 import cn.idaddy.android.opensdk.lib.utils.StringUtils
-import cn.idaddy.test.AudioInfoActivity
-import cn.idaddy.test.AudioRankTypeActivity
-import cn.idaddy.test.OrderListActivity
-import cn.idaddy.test.OrderPayParamActivity
+import cn.idaddy.test.*
 import kotlinx.android.synthetic.main.activity_layout.*
 
 class MainActivity : AppCompatActivity() {
@@ -146,6 +143,10 @@ class MainActivity : AppCompatActivity() {
         getCategoryAudiolistBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity, AudioListByCategoryIdActivity::class.java)
                     .putExtra("categoryid",editText_audioId.text.toString()))
+        }
+
+        auth_create_btn.setOnClickListener{
+            startActivity(Intent(this@MainActivity, AuthCreateActivity::class.java).putExtra("redeemCode",editText_redeemCode.text.toString()))
         }
 
 
