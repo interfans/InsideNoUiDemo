@@ -45,13 +45,13 @@
         <activity android:name=".TopicAudioListActivity"/>
         <activity android:name=".CategoryListActivity"/>
         <activity android:name=".AudioListByCategoryIdActivity"/>
+        <activity android:name=".activitys.SearchAudioActivity"/>
+
+
 
 
         <meta-data android:name="IDADDY_APP_ID" android:value="idaddy999" />
         <meta-data android:name="IDADDY_APP_KEY" android:value="7d88bb0df50d0fbdc95feea2e2ee426f6961792e" />
-
-        <!--<meta-data android:name="IDADDY_APP_ID" android:value="IDADDY_APP_ID" />-->
-        <!--<meta-data android:name="IDADDY_APP_KEY" android:value="IDADDY_APP_ID" />-->
     </application>
 
 </manifest>

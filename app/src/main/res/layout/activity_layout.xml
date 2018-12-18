@@ -303,6 +303,29 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@+id/getAudioInfo_btn" />
 
+        <Button
+            android:id="@+id/getSearchHotWord_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:text="获取搜索热词"
+            app:layout_constraintTop_toBottomOf="@+id/getAudioInfo_btn" />
+
+        <EditText
+            android:id="@+id/getSearchHotWord_editText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="年龄（测试默认：5岁）"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@+id/getSearchHotWord_btn"
+            app:layout_constraintLeft_toRightOf="@+id/getSearchHotWord_btn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/getSearchHotWord_btn" />
+
 
     </android.support.constraint.ConstraintLayout>
 
